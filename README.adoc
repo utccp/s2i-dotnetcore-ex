@@ -2,7 +2,7 @@
 
 This repository contains a simple MVC .NET Core application that can be deployed on utccp.
 
-The example is meant to be built and run with the https://github.com/redhat-developer/s2i-dotnetcore[s2i-dotnetcore] builder
+The example is meant to be built and run with the https://github.com/utccp/s2i-dotnetcore[s2i-dotnetcore] builder
 images. The branches of this repository correspond to versions of the s2i-dotnetcore images.
 
 = Deploying the application
@@ -15,7 +15,7 @@ images. The branches of this repository correspond to versions of the s2i-dotnet
 $ oc new-project mydemo
 
 # Add the .NET Core application
-$ oc new-app dotnet:3.1~https://github.com/redhat-developer/s2i-dotnetcore-ex#dotnetcore-3.1 --context-dir app
+$ oc new-app dotnet:3.1~https://github.com/utccp/s2i-dotnetcore-ex#dotnetcore-3.1 --context-dir app
 
 # Make the .NET Core application accessible externally and show the url
 $ oc expose service s2i-dotnetcore-ex
@@ -27,7 +27,7 @@ $ oc get route s2i-dotnetcore-ex
 [source]
 ----
 # Use git to check out the .NET Core application
-$ git clone https://github.com/redhat-developer/s2i-dotnetcore-ex
+$ git clone https://github.com/utccp/s2i-dotnetcore-ex
 $ cd s2i-dotnetcore-ex/app
 $ git checkout dotnetcore-3.1
 
