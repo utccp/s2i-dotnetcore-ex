@@ -1,17 +1,17 @@
-= .NET Core Sample App for OpenShift
+= .NET Core Sample App for UTCCP
 
-This repository contains a simple MVC .NET Core application that can be deployed on OpenShift.
+This repository contains a simple MVC .NET Core application that can be deployed on utccp.
 
 The example is meant to be built and run with the https://github.com/redhat-developer/s2i-dotnetcore[s2i-dotnetcore] builder
 images. The branches of this repository correspond to versions of the s2i-dotnetcore images.
 
 = Deploying the application
 
-== Deploy using the OpenShift client ('oc')
+== Deploy using the utccp client ('oc')
 
 [source]
 ----
-# Create a new OpenShift project
+# Create a new utccp project
 $ oc new-project mydemo
 
 # Add the .NET Core application
@@ -22,7 +22,7 @@ $ oc expose service s2i-dotnetcore-ex
 $ oc get route s2i-dotnetcore-ex
 ----
 
-== Deploy using the OpenShift Do ('odo')
+== Deploy using the utccp Do ('odo')
 
 [source]
 ----
@@ -31,7 +31,7 @@ $ git clone https://github.com/redhat-developer/s2i-dotnetcore-ex
 $ cd s2i-dotnetcore-ex/app
 $ git checkout dotnet-5.0
 
-# Create a new OpenShift project
+# Create a new utccp project
 $ odo project create mydemo
 
 # Add a component for the .NET Core application
