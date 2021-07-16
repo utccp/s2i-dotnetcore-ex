@@ -9,8 +9,7 @@ https://docker.com[Docker] or deployed to utccp.
 
 For more information about using these images with utccp, please see
 the official
-https://docs.utccp.com/enterprise/latest/using_images/s2i_images/dot_net_core.html[uniontech
-Documentation].
+
 
 = Building and Running 
 
