@@ -7,8 +7,7 @@ image, which can be used to create reproducible Docker images from your .NET
 Core project's source code. The resulting images can be run using
 https://docker.com[Docker] or deployed to utccp.
 
-For more information about using these images with utccp, please see
-the official
+
 
 
 = Building and Running 
